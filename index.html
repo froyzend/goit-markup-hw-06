@@ -20,16 +20,11 @@
 
   <body>
     <header class="header">
-      <div class="container-header">
+      <div class="container header-container">
         <nav class="list-nav">
           <a href="./index.html" class="navigation-logo"
             >Web<span class="logo-span-heder">Studio</span></a
           >
-          <button class="btn-menu">
-            <svg class="menu" width="18" height="16">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
           <ul class="list">
             <li>
               <a href="/index.html" class="navigation-link-studio">Studio</a>
@@ -53,6 +48,96 @@
             </li>
           </ul>
         </address>
+        <button class="btn-menu">
+          <svg class="menu" width="18" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="container mobile-container">
+          <button class="menu-close-btn" type="button">
+            <svg class="close-icons" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-1"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-list">
+              <li>
+                <a href="/index.html" class="menu-link-studio">Studio</a>
+              </li>
+              <li>
+                <a href="/index.html" class="menu-link">Portfolio</a>
+              </li>
+              <li>
+                <a href="/index.html" class="menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-adress">
+            <ul class="mobile-ul">
+              <li>
+                <a href="tel:+110001111111" class="mobile-ad tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mobile-ad"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social-link-menu">
+            <li class="menu-list">
+              <a
+                class="link-icon"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="menu-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="menu-list">
+              <a
+                class="link-icon"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="menu-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-list">
+              <a
+                class="link-icon"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="menu-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="menu-list">
+              <a
+                class="link-icon"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="menu-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -141,17 +226,43 @@
           <h2 class="title-h">Our Team</h2>
           <ul class="main-team">
             <li class="team-list">
-              <img
-                srcset="./images/team/mark.jpg @1, ./images/team/mark2.jpg @2"
-                src="./images/team/mark.jpg"
-                alt="Product Designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/desctop/mark-destop.jpg 1x,
+                    ./images/desctop/Mdestop2.jpg    2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/Mtablet.jpg     1x,
+                    ./images/tablet/markTablet2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/mobile/mark.jpg  1x,
+                    ./images/mobile/mark2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/mobile/mark.jpg"
+                  alt="Product Designer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-container">
                 <h3 class="title">Mark Guerrero</h3>
                 <p class="note-hidden">Product Designer</p>
-
                 <ul class="social-link-team">
                   <li class="team-icons">
                     <a
@@ -203,14 +314,42 @@
                 </ul>
               </div>
             </li>
+
             <li class="team-list">
-              <img
-                srcset="./images/team/tom.jpg @1, ./images/team/tom2.jpg @2"
-                src="./images/team/tom.jpg"
-                alt="Frontend Developer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/desctop/tom-destop.jpg 1x,
+                    ./images/desctop/Tdestop2.jpg   2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/TTablet1.jpg   1x,
+                    ./images/tablet/tomTablet2.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/mobile/tom.jpg  1x,
+                    ./images/mobile/tom2.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/tom.jpg"
+                  alt="Frontend Developer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-container">
                 <h3 class="title">Tom Ford</h3>
                 <p class="note-hidden">Frontend Developer</p>
@@ -267,13 +406,40 @@
             </li>
 
             <li class="team-list">
-              <img
-                srcset="./images/team/camila.jpg @1, ./images/team/camila2.jpg @2"
-                src="./images/team/camila.jpg"
-                alt="Marketing"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/desctop/camila-destop.jpg 1x,
+                    ./images/desctop/Cdestop2.jpg      2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/CTablet1.jpg      1x,
+                    ./images/tablet/camilaTablet2.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/mobile/camila.jpg 1x,
+                    ./images/mobile/camila.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/camila.jpg"
+                  alt="Marketing"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-container">
                 <h3 class="title">Camila Garcia</h3>
                 <p class="note-hidden">Marketing</p>
@@ -330,13 +496,39 @@
             </li>
 
             <li class="team-list">
-              <img
-                srcset="./images/team/denial.jpg @1, ./images/team/denial2.jpg @2"
-                src="./images/team/denial.jpg"
-                alt="UI Designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/desctop/denial-destop.jpg 1x,
+                    ./images/desctop/Ddestop2.jpg      2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/DTalet1.jpg       1x,
+                    ./images/tablet/danielTablet2.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/mobile/denial.jpg  1x,
+                    ./images/mobile/denial2.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/denial.jpg"
+                  alt="UI Designerr"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-container">
                 <h3 class="title">Daniel Wilson</h3>
                 <p class="note-hidden">UI Designer</p>
@@ -402,13 +594,42 @@
           <ul class="portfolio-list">
             <li class="app-list">
               <div class="overlay">
-                <img
-                  srcset="./images/portfolio/banking.jpg @1, ./images/portfolio/banking2.jpg @2"
-                  src="./images/portfolio/banking.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/desctop/img1-destop.jpg  1x,
+                      ./images/desctop/img1-destop2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet/img1-tablet1.jpg 1x,
+                      ./images/tablet/img1-tablet2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width:320px)"
+                    srcset="
+                      ./images/mobile/banking.jpg  1x,
+                      ./images/mobile/banking2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/mobile/banking.jpg"
+                    alt="Banking App"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
 
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -421,15 +642,43 @@
                 <p class="note">App</p>
               </div>
             </li>
+
             <li class="app-list">
               <div class="overlay">
-                <img
-                  srcset="./images/portfolio/payment.jpg @1, ./images/portfolio/payment2.jpg @2"
-                  src="./images/portfolio/payment.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/desctop/img2-destop.jpg  1x,
+                      ./images/desctop/img2-destop2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet/img2-tablet1.jpg 1x,
+                      ./images/tablet/img2-tablet2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:320px)"
+                    srcset="
+                      ./images/mobile/payment.jpg  1x,
+                      ./images/mobile/payment2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/mobile/payment.jpg"
+                    alt="Cashless Payment"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
 
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -442,15 +691,43 @@
                 <p class="note">Marketing</p>
               </div>
             </li>
+
             <li class="app-list">
               <div class="overlay">
-                <img
-                  srcset="./images/portfolio/app.jpg @1, ./images/portfolio/app.jpg @2"
-                  src="./images/portfolio/app.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/desctop/img3-destop.jpg  1x,
+                      ./images/desctop/img3-destop2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet/img3-tablet1.jpg 1x,
+                      ./images/tablet/img3-tablet2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:320px)"
+                    srcset="
+                      ./images/mobile/app.jpg  1x,
+                      ./images/mobile/app2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/mobile/app.jpg"
+                    alt="Meditation App"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
 
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -466,14 +743,40 @@
 
             <li class="app-list">
               <div class="overlay">
-                <img
-                  srcset="./images/portfolio/taxi.jpg @1, ./images/portfolio/taxi2.jpg @2"
-                  src="./images/portfolio/taxi.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/desctop/img4-destop.jpg  1x,
+                      ./images/desctop/img4-destop2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet/img4-tablet1.jpg 1x,
+                      ./images/tablet/img4-tablet2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:320px)"
+                    srcset="
+                      ./images/mobile/taxi.jpg  1x,
+                      ./images/mobile/taxi2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
 
+                  <img
+                    src="./images/mobile/taxi.jpg"
+                    alt="Taxi Service"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -487,13 +790,42 @@
             </li>
             <li class="app-list">
               <div class="overlay">
-                <img
-                  srcset="./images/portfolio/screen.jpg @1, ./images/portfolio/screen2.jpg @2"
-                  src="./images/portfolio/screen.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/desctop/img5-destop.jpg  1x,
+                      ./images/desctop/img5-destop2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet/img5-tablet1.jpg 1x,
+                      ./images/tablet/img5-tablet2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width:320px)"
+                    srcset="
+                      ./images/mobile/screen.jpg  1x,
+                      ./images/mobile/screen2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/mobile/screen.jpg"
+                    alt="Screen Illustrations"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
 
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -508,13 +840,42 @@
             </li>
             <li class="app-list">
               <div class="overlay">
-                <img
-                  srcset="./images/portfolio/online.jpg @1, ./images/portfolio/online2.jpg @2"
-                  src="./images/portfolio/online.jpg"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/desctop/img6-destop.jpg  1x,
+                      ./images/desctop/img6-destop2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet/img6-tablet1.jpg 1x,
+                      ./images/tablet/img6-tablet2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width:320px)"
+                    srcset="
+                      ./images/mobile/online.jpg  1x,
+                      ./images/mobile/online2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/mobile/online.jpg"
+                    alt="Online Courses"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
 
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -533,7 +894,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container-footer">
+      <div class="container footer-container">
         <div class="karre">
           <a href="./index.html" class="navigation-logo-footer"
             >Web<span class="logo-span-footer">Studio</span></a
@@ -696,18 +1057,19 @@
             <label class="label" for="user-privacy">
               <span class="checkbox-span">
                 <svg class="checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-private"></use>
-                </svg>
+                  <use href="./images/icons.svg#icon-private"></use></svg
+              ></span>
+              <span>
+                I accept the terms and conditions of the
+                <a
+                  class="privacy-policy-link"
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy
+                </a>
               </span>
-              I accept the terms and conditions of the&nbsp;
-              <a
-                class="privacy-policy-link"
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Privacy Policy
-              </a>
             </label>
           </div>
           <button class="form-btn" type="submit">Send</button>
