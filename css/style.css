@@ -554,8 +554,10 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
 
-    @media (min-resolution: 192dpi) {
+  @media (min-resolution: 192dpi) {
+    .main-header {
       background-image: linear-gradient(to bottom,
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
@@ -607,14 +609,15 @@ button:focus {
     padding-bottom: 122px;
 
     @media (min-resolution: 192dpi) {
-      background-image: linear-gradient(to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/tablet/Dark-bg-tablet@2.jpg);
+      .main-header {
+        background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/tablet/Dark-bg-tablet@2.jpg);
+      }
     }
   }
 }
-
 
 
 /********************DESCTOP*************/
@@ -630,10 +633,12 @@ button:focus {
     padding-bottom: 188px;
 
     @media (min-resolution: 192dpi) {
-      background-image: linear-gradient(to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/desctop/people-office@2.jpg);
+      .main-header {
+        background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/desctop/people-office@2.jpg);
+      }
     }
   }
 }
@@ -1051,7 +1056,6 @@ button:focus {
   line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  /*320*/
   margin-bottom: 16px;
   background-color: transparent;
   border: 1px solid #fff;
@@ -1075,8 +1079,6 @@ button:focus {
   border-radius: 4px;
   padding: 8px 24px;
   margin: 0 auto;
-  /*
-  margin: 0;*/
   background-color: #4d5ae5;
   color: #fff;
   font-weight: 500;
@@ -1132,29 +1134,36 @@ button:focus {
 
 @media screen and (min-width:1158px) {
   .footer {
+    width: 100%;
     padding: 100px 0;
   }
 
   .footer-container {
+    width: 100%;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
-
   }
 
   .karre {
+    margin-right: 120px;
     margin-left: 0;
+    margin-bottom: 0;
     padding-bottom: 0;
   }
 
   .karre-two {
-    display: block;
-    padding-left: 120px;
+    /*
+    display: block;*/
     padding-bottom: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .container-form {
-    padding-left: 80px;
+    /*
+    display: block;*/
+    margin-left: 80px;
   }
 
 }
