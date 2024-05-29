@@ -533,39 +533,19 @@ button {
   margin: 0 auto;
   padding-top: 72px;
   padding-bottom: 72px;
+}
 
-  @media (min-resolution: 192dpi) {
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/mobile/Dark-bg-mobile@2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+@media screen and (min-width: 320px) {
+  .main-header {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/mobile/Dark-bg-mobile@1.jpg);
   }
 }
 
-@media screen and (min-width:320px) {
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
   .main-header {
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/mobile/Dark-bg-mobile@1.jpg );
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
-  @media (min-resolution: 192dpi) {
-    .main-header {
-      background-image: linear-gradient(to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/mobile/Dark-bg-mobile@2.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/mobile/Dark-bg-mobile@2.jpg);
   }
 }
 
@@ -598,48 +578,41 @@ button:focus {
 
 /************************TABLET********************/
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .main-header {
     max-width: 768px;
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/tablet/dark-bg-tablet@1.jpg);
     padding-top: 112px;
     padding-bottom: 122px;
+  }
+}
 
-    @media (min-resolution: 192dpi) {
-      .main-header {
-        background-image: linear-gradient(to bottom,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-          url(../images/tablet/Dark-bg-tablet@2.jpg);
-      }
-    }
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .main-header {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/tablet/Dark-bg-tablet@2.jpg);
   }
 }
 
 
 /********************DESCTOP*************/
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
   .main-header {
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/desctop/people-office-destop@1.jpg);
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+}
 
-    @media (min-resolution: 192dpi) {
-      .main-header {
-        background-image: linear-gradient(to bottom,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-          url(../images/desctop/people-office@2.jpg);
-      }
-    }
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .main-header {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/desctop/people-office@2.jpg);
   }
 }
 
