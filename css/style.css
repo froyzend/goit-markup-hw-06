@@ -65,15 +65,14 @@ button {
   .header-title {
     max-width: 496px;
     margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
   }
 }
 
 @media screen and (min-width:1158px) {
   .header-title {
     margin-bottom: 48px;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
   }
 }
 
@@ -563,7 +562,6 @@ button:focus {
   letter-spacing: 0.04em;
   color: #fff;
   background: #4d5ae5;
-  margin-top: 48px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   display: block;
